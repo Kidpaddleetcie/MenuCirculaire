@@ -1,0 +1,113 @@
+.circunu {
+  position: relative;
+  background: #ffffff;
+  width: 3em;
+  height: 3em;
+  border-radius: 5em;
+  margin: auto;
+  margin-top: 5em;
+  margin-bottom: 5em;
+  border: 1em solid #ffffff;
+  color: white;
+  -webkit-transform: scale(2);
+          transform: scale(2);
+  -webkit-transition: border 0.3s, bg 0.4s;
+  transition: border 0.3s, bg 0.4s;
+}
+
+.circunu:hover {
+  border: 1em solid #940000;
+  background: #940000;
+}
+
+.circunu:hover li {
+  opacity: 1;
+}
+
+.circunu:hover ul::before {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  display: block;
+  left: 50%;
+  top: -5.0em;
+  border-width: 6.5em;
+  border-radius: 0 7.5em 7.5em 0;
+  border-left: 0;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.01);
+  z-index: -1;
+}
+
+.circunu ul {
+  list-style-type: none;
+  border-radius: 500px;
+  list-style-position: inside;
+  list-style: none;
+  padding: 0;
+}
+
+.circunu ul li {
+  width: 5em;
+  height: 1.4em;
+  padding: 0.2em;
+  margin-top: 0.2em;
+  text-align: left;
+  border-top-right-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
+  background: -webkit-gradient(linear, left top, right top, color-stop(37.5%, black), color-stop(5%, white));
+  background: linear-gradient(to right, black 37.5%, white 5%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+}
+
+.circunu ul li:hover {
+  background: -webkit-gradient(linear, left top, right top, color-stop(37.5%, black), color-stop(5%, #940000));
+  background: linear-gradient(to right, black 37.5%, #940000 5%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+}
+
+.circunu ul li:nth-of-type(1) {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  position: absolute;
+  left: 0.5em;
+  top: -2em;
+}
+
+.circunu ul li:nth-of-type(1):hover {
+  left: 0.6em;
+  top: -2.1em;
+}
+
+.circunu ul li:nth-of-type(2) {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  position: absolute;
+  left: 2em;
+  top: 0.5em;
+}
+
+.circunu ul li:nth-of-type(2):hover {
+  left: 2.1em;
+  top: 0.5em;
+}
+
+.circunu ul li:nth-of-type(3) {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  position: absolute;
+  left: 0.8em;
+  top: 3em;
+}
+
+.circunu ul li:nth-of-type(3):hover {
+  left: 0.9em;
+  top: 3.1em;
+}
+/*# sourceMappingURL=circunu.css.map */
